@@ -1,0 +1,232 @@
+:root {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --transgreen: rgba(56, 204, 140, 0.7);
+    --darkblue: hsl(249, 10%, 26%); 
+    --grayishblue: hsl(246, 25%, 77%);
+    --blue: hsl(248, 32%, 49%);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../src/bg-intro-desktop.png");
+    background-color: var(--red);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+.container {
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: clamp(3rem, 4vw, 5rem);
+    padding-right: clamp(3rem, 4vw, 5rem);
+}
+
+
+h1 {
+    font-size: clamp(1rem, 5vw, 3rem);
+    line-height: clamp(3rem, 4vw , 3.5rem);
+    margin-bottom: 2rem;
+}
+
+.text p {
+    
+}
+
+.trial {
+    width: 600px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: var(--blue);    
+    height: 60px;
+    width: clamp(80%, 50vh , 90%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.392) 0px 8px 8px 0px;
+    margin-bottom: 50px;
+    font-size: clamp(0.6rem, 1.7vh, 1rem);
+    
+}
+
+form {
+    height: 60%;
+    width: clamp(80%, 50vh , 90%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.392) 0px 8px 8px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    margin-top: 10px;
+    height: 6vh;
+    width: clamp(70%, 50vh , 90%);
+    padding-left: 2rem;
+    color: rgba(96, 96, 96, 1);
+    font-weight: 700;
+    border-radius: 8px;
+    border-style: solid;
+    border-color:rgba(176, 176, 176, 0.3);
+    
+}
+
+.error-icon {
+    background: url("../src/icon.error.svg") no-repeat right;
+    background-size: 20px;
+}
+
+
+form i {
+    position: absolute;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+
+input:focus {
+
+    border:1px solid var(--darkblue) ;
+    outline: none;
+    color: black;
+}
+
+#submit {
+    background-color: var(--green);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#submit:hover {
+    background-color: var(--transgreen);
+    cursor: pointer;
+}
+
+.error {
+    border:1px solid var(--red) ;
+    outline: none;
+    color: var(--red);
+}
+
+.error_msg {
+    font-style: italic;
+    padding-top: 5px;
+    padding-right: 30px;
+    align-self: flex-end;
+    font-size: 0.7rem;
+    color: red;
+}
+
+.agree {
+    padding-top: 1rem;
+    font-size: 0.7rem;
+    color: grey;
+
+}
+
+.terms {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--red);
+  
+}
+
+footer {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+    justify-content: center;
+}
+
+footer a {
+    color: brown;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    
+}
+
+
+@media (min-width: 1440px) {
+
+}
+
+
+/*# Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+### Body Copy
+- Font size: 16px
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
