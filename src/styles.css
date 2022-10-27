@@ -1,13 +1,15 @@
 :root {
-    --red: hsl(0, 100%, 74%); 
+    --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
     --transgreen: rgba(56, 204, 140, 0.7);
-    --darkblue: hsl(249, 10%, 26%); 
+    --darkblue: hsl(249, 10%, 26%);
     --grayishblue: hsl(246, 25%, 77%);
     --blue: hsl(248, 32%, 49%);
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,11 +25,10 @@ body {
     align-items: center;
     background: url("../src/bg-intro-desktop.png");
     background-color: var(--red);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: white;
 }
-
 
 .container {
     height: 90vh;
@@ -46,13 +47,11 @@ body {
     padding-right: clamp(3rem, 4vw, 5rem);
 }
 
-
 h1 {
     font-size: clamp(1rem, 5vw, 3rem);
-    line-height: clamp(3rem, 4vw , 3.5rem);
+    line-height: clamp(3rem, 4vw, 3.5rem);
     margin-bottom: 2rem;
 }
-
 
 .trial {
     width: 40vw;
@@ -64,21 +63,20 @@ h1 {
 }
 
 .title {
-    background-color: var(--blue);    
+    background-color: var(--blue);
     height: 60px;
-    width: clamp(80%, 50vh , 90%);
+    width: clamp(80%, 50vh, 90%);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.392) 0px 8px 8px 0px;
     margin-bottom: 50px;
     font-size: clamp(0.6rem, 1.7vh, 1rem);
-    
 }
 
 form {
     width: 90%;
-    width: clamp(80%, 50vh , 90%);
+    width: clamp(80%, 50vh, 90%);
     border-radius: 8px;
     padding: 30px;
     background-color: white;
@@ -86,8 +84,6 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
-
 }
 
 form div {
@@ -99,20 +95,17 @@ input {
     padding: 17px 25px;
     margin-bottom: 18px;
     height: 6vh;
-    width: clamp(70%, 50vh , 90%);
+    width: clamp(70%, 50vh, 90%);
     padding-left: 2rem;
     color: rgba(96, 96, 96, 1);
     font-weight: 600;
     border-radius: 8px;
     border-style: solid;
-    border-color:rgba(176, 176, 176, 0.3);
-    
+    border-color: rgba(176, 176, 176, 0.3);
 }
- 
 
 input:focus {
-
-    border:1px solid var(--darkblue) ;
+    border: 1px solid var(--darkblue);
     outline: none;
     color: black;
 }
@@ -125,7 +118,9 @@ input:focus {
     letter-spacing: 1px;
     border: none;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #submit:hover {
@@ -133,20 +128,16 @@ input:focus {
     cursor: pointer;
 }
 
-
-
 .agree {
     padding-top: 1rem;
     font-size: 0.7rem;
     color: grey;
-
 }
 
 .terms {
     font-weight: 700;
     text-decoration: none;
     color: var(--red);
-  
 }
 
 footer {
@@ -165,8 +156,8 @@ footer a:hover {
 }
 
 .error {
-    border: 2px solid var(--red) ;
-    background: url('../src/icon-error.svg') no-repeat;
+    border: 2px solid var(--red);
+    background: url("../src/icon-error.svg") no-repeat;
     background-position: 95% 50%;
     outline: none;
     color: var(--red);
@@ -187,19 +178,16 @@ footer a:hover {
     border: 2px solid var(--green);
     outline: none;
     color: black;
-
 }
 
 @media (max-width: 800px) {
-    
-
     body {
         height: 100vh;
         width: 100vw;
         position: relative;
         background: url("../src/bg-intro-desktop.png");
         background-color: var(--red);
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         color: white;
     }
@@ -213,7 +201,7 @@ footer a:hover {
         justify-content: center;
     }
 
-    .text {  
+    .text {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -222,7 +210,7 @@ footer a:hover {
         padding-left: clamp(3rem, 4vw, 5rem);
         padding-right: clamp(3rem, 4vw, 5rem);
     }
-    
+
     .trial {
         width: 90vw;
         align-items: center;
@@ -236,7 +224,7 @@ footer a:hover {
         line-height: 2rem;
         margin-bottom: 2rem;
     }
-    
+
     .text p {
         font-size: 0.9rem;
     }
@@ -244,14 +232,12 @@ footer a:hover {
     .title {
         margin: 30px 0;
         height: 80px;
-        
     }
 
     footer {
         display: none;
     }
 }
-
 
 @media (min-width: 1440px) {
     body {
@@ -264,12 +250,11 @@ footer a:hover {
         align-items: center;
         background: none;
         background-color: rgba(0, 0, 0, 0.1);
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         color: white;
     }
-    
-    
+
     .container {
         background: url("../src/bg-intro-desktop.png");
         background-color: var(--red);
@@ -280,20 +265,14 @@ footer a:hover {
         align-items: center;
     }
 
-    
-footer {
-    color: black;
+    footer {
+        color: black;
+    }
+
+    footer a:hover {
+        color: var(--green);
+    }
 }
-
-
-footer a:hover {
-    color:var(--green);
-}
-
-
-
-}
-
 
 /*# Front-end Style Guide
 ## Layout
